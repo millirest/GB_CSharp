@@ -27,7 +27,7 @@ Files built by Visual Studio
 *.rsp
 *.sbr
 *.cache
-*.json
+#*.json
 
 
 macOS specific

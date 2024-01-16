@@ -1,4 +1,4 @@
-﻿
+﻿// Реализовано выполнение одной из 4 задач, не комитя их отдельно
 System.Console.Write("Какую задачу выполнить? (от 1 до 4):");
 int task = Convert.ToInt32(Console.ReadLine());
 
@@ -64,7 +64,6 @@ if (task == 3)
 	System.Console.WriteLine("Целое число из отрезка:"+num);
 	int num1 = num / 10;
 	int num2 = num % 10;
-
 	if (num1>num2)
 	{
 		System.Console.WriteLine("Наибольшая цифра:"+num1);
@@ -82,10 +81,7 @@ if (task==4)
 	var Stack = new Stack<int>();
 	System.Console.Write("Цифры через запятую:");
 
-	if (num < 10)
-	{
-		System.Console.Write(num);
-	}
+	if (num < 10) {System.Console.Write(num);}
 	else
 	{
 		while (num > 0)
@@ -97,7 +93,8 @@ if (task==4)
 			{
 				System.Console.Write(digit+",");
 			}
-			else {
+			else 
+			{
 				System.Console.WriteLine(digit);
 				System.Console.Write("Вывод нормальным порядком:");
 				while (Stack.Count>0)
@@ -108,8 +105,7 @@ if (task==4)
 						System.Console.Write(Stack.Pop());
 					}
 				}
-				
-				}
+			}
 		}
 	}
 }
